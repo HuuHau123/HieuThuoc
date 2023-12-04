@@ -1,0 +1,889 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{78E7C53A-AB90-4B50-A9D1-8A81C881686B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Quan_Ly_Hieu_Thuoc</RootNamespace>
+    <AssemblyName>Quan_Ly_Hieu_Thuoc</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.4.4\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="connect.cs" />
+    <Compile Include="frmTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTK.Designer.cs">
+      <DependentUpon>frmTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HieuThuocN07_05DataSet32.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HieuThuocN07_05DataSet32.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HieuThuocN07_05DataSet33.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HieuThuocN07_05DataSet33.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HieuThuocN07_05DataSet34.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HieuThuocN07_05DataSet34.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HieuThuocN07_05DataSet35.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HieuThuocN07_05DataSet35.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HieuThuocN07_05DataSet36.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HieuThuocN07_05DataSet36.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDon.cs" />
+    <Compile Include="DonViTinh.cs" />
+    <Compile Include="frmKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKho.Designer.cs">
+      <DependentUpon>frmKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HieuThuocN07_05DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HieuThuocN07_05DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HieuThuocN07_05DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HieuThuocN07_05DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HieuThuocN07_05DataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HieuThuocN07_05DataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HieuThuocN07_05DataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HieuThuocN07_05DataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HieuThuocN07_05DataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HieuThuocN07_05DataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HieuThuocN07_05DataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HieuThuocN07_05DataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HieuThuocN07_05DataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HieuThuocN07_05DataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HieuThuocN07_05DataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HieuThuocN07_05DataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HieuThuocN07_05DataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HieuThuocN07_05DataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HieuThuocN07_05DataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HieuThuocN07_05DataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HieuThuocN07_05DataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HieuThuocN07_05DataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HieuThuocN07_05DataSet19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HieuThuocN07_05DataSet19.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HieuThuocN07_05DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HieuThuocN07_05DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HieuThuocN07_05DataSet20.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HieuThuocN07_05DataSet20.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HieuThuocN07_05DataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HieuThuocN07_05DataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HieuThuocN07_05DataSet22.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HieuThuocN07_05DataSet22.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HieuThuocN07_05DataSet23.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HieuThuocN07_05DataSet23.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HieuThuocN07_05DataSet24.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HieuThuocN07_05DataSet24.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HieuThuocN07_05DataSet25.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HieuThuocN07_05DataSet25.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HieuThuocN07_05DataSet26.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HieuThuocN07_05DataSet26.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HieuThuocN07_05DataSet27.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HieuThuocN07_05DataSet27.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HieuThuocN07_05DataSet28.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HieuThuocN07_05DataSet28.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HieuThuocN07_05DataSet29.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HieuThuocN07_05DataSet29.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HieuThuocN07_05DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HieuThuocN07_05DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HieuThuocN07_05DataSet30.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HieuThuocN07_05DataSet30.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HieuThuocN07_05DataSet31.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HieuThuocN07_05DataSet31.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HieuThuocN07_05DataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HieuThuocN07_05DataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HieuThuocN07_05DataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HieuThuocN07_05DataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HieuThuocN07_05DataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HieuThuocN07_05DataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HieuThuocN07_05DataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HieuThuocN07_05DataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HieuThuocN07_05DataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HieuThuocN07_05DataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HieuThuocN07_05DataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HieuThuocN07_05DataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Kho.cs" />
+    <Compile Include="LoaiThuoc.cs" />
+    <Compile Include="NhaCungCap.cs" />
+    <Compile Include="nhanvien.cs" />
+    <Compile Include="frmBanHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBanHang.Designer.cs">
+      <DependentUpon>frmBanHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPhieuNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhieuNhap.Designer.cs">
+      <DependentUpon>frmPhieuNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThongKe.Designer.cs">
+      <DependentUpon>frmThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemThuocCu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemThuocCu.Designer.cs">
+      <DependentUpon>frmThemThuocCu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemThuoc.Designer.cs">
+      <DependentUpon>frmThemThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLthuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLthuoc.Designer.cs">
+      <DependentUpon>frmQLthuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoaiDuocPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoaiDuocPham.Designer.cs">
+      <DependentUpon>frmLoaiDuocPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThuoc.Designer.cs">
+      <DependentUpon>frmThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNhaCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNhaCC.Designer.cs">
+      <DependentUpon>frmNhaCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemNV.Designer.cs">
+      <DependentUpon>frmThemNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNhanVien.Designer.cs">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegister.Designer.cs">
+      <DependentUpon>frmRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhieuNhap.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Thuoc.cs" />
+    <Compile Include="Thongke.cs" />
+    <EmbeddedResource Include="frmKho.resx">
+      <DependentUpon>frmKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBanHang.resx">
+      <DependentUpon>frmBanHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPhieuNhap.resx">
+      <DependentUpon>frmPhieuNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThongKe.resx">
+      <DependentUpon>frmThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemThuocCu.resx">
+      <DependentUpon>frmThemThuocCu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoaiDuocPham.resx">
+      <DependentUpon>frmLoaiDuocPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNhaCC.resx">
+      <DependentUpon>frmNhaCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNhanVien.resx">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLthuoc.resx">
+      <DependentUpon>frmQLthuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegister.resx">
+      <DependentUpon>frmRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemNV.resx">
+      <DependentUpon>frmThemNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemThuoc.resx">
+      <DependentUpon>frmThemThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThuoc.resx">
+      <DependentUpon>frmThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTK.resx">
+      <DependentUpon>frmTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="HieuThuocN07_05DataSet.xsc">
+      <DependentUpon>HieuThuocN07_05DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HieuThuocN07_05DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HieuThuocN07_05DataSet.xss">
+      <DependentUpon>HieuThuocN07_05DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet1.xsc">
+      <DependentUpon>HieuThuocN07_05DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HieuThuocN07_05DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HieuThuocN07_05DataSet1.xss">
+      <DependentUpon>HieuThuocN07_05DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet10.xsc">
+      <DependentUpon>HieuThuocN07_05DataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HieuThuocN07_05DataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HieuThuocN07_05DataSet10.xss">
+      <DependentUpon>HieuThuocN07_05DataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet11.xsc">
+      <DependentUpon>HieuThuocN07_05DataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HieuThuocN07_05DataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HieuThuocN07_05DataSet11.xss">
+      <DependentUpon>HieuThuocN07_05DataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet12.xsc">
+      <DependentUpon>HieuThuocN07_05DataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HieuThuocN07_05DataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HieuThuocN07_05DataSet12.xss">
+      <DependentUpon>HieuThuocN07_05DataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet13.xsc">
+      <DependentUpon>HieuThuocN07_05DataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HieuThuocN07_05DataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HieuThuocN07_05DataSet13.xss">
+      <DependentUpon>HieuThuocN07_05DataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet14.xsc">
+      <DependentUpon>HieuThuocN07_05DataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HieuThuocN07_05DataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HieuThuocN07_05DataSet14.xss">
+      <DependentUpon>HieuThuocN07_05DataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet15.xsc">
+      <DependentUpon>HieuThuocN07_05DataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HieuThuocN07_05DataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HieuThuocN07_05DataSet15.xss">
+      <DependentUpon>HieuThuocN07_05DataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet16.xsc">
+      <DependentUpon>HieuThuocN07_05DataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HieuThuocN07_05DataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HieuThuocN07_05DataSet16.xss">
+      <DependentUpon>HieuThuocN07_05DataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet17.xsc">
+      <DependentUpon>HieuThuocN07_05DataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HieuThuocN07_05DataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HieuThuocN07_05DataSet17.xss">
+      <DependentUpon>HieuThuocN07_05DataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet18.xsc">
+      <DependentUpon>HieuThuocN07_05DataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HieuThuocN07_05DataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HieuThuocN07_05DataSet18.xss">
+      <DependentUpon>HieuThuocN07_05DataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet19.xsc">
+      <DependentUpon>HieuThuocN07_05DataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HieuThuocN07_05DataSet19.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HieuThuocN07_05DataSet19.xss">
+      <DependentUpon>HieuThuocN07_05DataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet2.xsc">
+      <DependentUpon>HieuThuocN07_05DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HieuThuocN07_05DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HieuThuocN07_05DataSet2.xss">
+      <DependentUpon>HieuThuocN07_05DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet20.xsc">
+      <DependentUpon>HieuThuocN07_05DataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet20.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HieuThuocN07_05DataSet20.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HieuThuocN07_05DataSet20.xss">
+      <DependentUpon>HieuThuocN07_05DataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet21.xsc">
+      <DependentUpon>HieuThuocN07_05DataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HieuThuocN07_05DataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HieuThuocN07_05DataSet21.xss">
+      <DependentUpon>HieuThuocN07_05DataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet22.xsc">
+      <DependentUpon>HieuThuocN07_05DataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet22.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HieuThuocN07_05DataSet22.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HieuThuocN07_05DataSet22.xss">
+      <DependentUpon>HieuThuocN07_05DataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet23.xsc">
+      <DependentUpon>HieuThuocN07_05DataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet23.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HieuThuocN07_05DataSet23.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HieuThuocN07_05DataSet23.xss">
+      <DependentUpon>HieuThuocN07_05DataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet24.xsc">
+      <DependentUpon>HieuThuocN07_05DataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet24.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HieuThuocN07_05DataSet24.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HieuThuocN07_05DataSet24.xss">
+      <DependentUpon>HieuThuocN07_05DataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet25.xsc">
+      <DependentUpon>HieuThuocN07_05DataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet25.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HieuThuocN07_05DataSet25.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HieuThuocN07_05DataSet25.xss">
+      <DependentUpon>HieuThuocN07_05DataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet26.xsc">
+      <DependentUpon>HieuThuocN07_05DataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet26.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HieuThuocN07_05DataSet26.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HieuThuocN07_05DataSet26.xss">
+      <DependentUpon>HieuThuocN07_05DataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet27.xsc">
+      <DependentUpon>HieuThuocN07_05DataSet27.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet27.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HieuThuocN07_05DataSet27.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HieuThuocN07_05DataSet27.xss">
+      <DependentUpon>HieuThuocN07_05DataSet27.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet28.xsc">
+      <DependentUpon>HieuThuocN07_05DataSet28.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet28.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HieuThuocN07_05DataSet28.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HieuThuocN07_05DataSet28.xss">
+      <DependentUpon>HieuThuocN07_05DataSet28.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet29.xsc">
+      <DependentUpon>HieuThuocN07_05DataSet29.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet29.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HieuThuocN07_05DataSet29.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HieuThuocN07_05DataSet29.xss">
+      <DependentUpon>HieuThuocN07_05DataSet29.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet3.xsc">
+      <DependentUpon>HieuThuocN07_05DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HieuThuocN07_05DataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HieuThuocN07_05DataSet3.xss">
+      <DependentUpon>HieuThuocN07_05DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet30.xsc">
+      <DependentUpon>HieuThuocN07_05DataSet30.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet30.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HieuThuocN07_05DataSet30.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HieuThuocN07_05DataSet30.xss">
+      <DependentUpon>HieuThuocN07_05DataSet30.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet31.xsc">
+      <DependentUpon>HieuThuocN07_05DataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet31.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HieuThuocN07_05DataSet31.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HieuThuocN07_05DataSet31.xss">
+      <DependentUpon>HieuThuocN07_05DataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet32.xsc">
+      <DependentUpon>HieuThuocN07_05DataSet32.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet32.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HieuThuocN07_05DataSet32.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HieuThuocN07_05DataSet32.xss">
+      <DependentUpon>HieuThuocN07_05DataSet32.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet33.xsc">
+      <DependentUpon>HieuThuocN07_05DataSet33.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet33.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HieuThuocN07_05DataSet33.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HieuThuocN07_05DataSet33.xss">
+      <DependentUpon>HieuThuocN07_05DataSet33.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet34.xsc">
+      <DependentUpon>HieuThuocN07_05DataSet34.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet34.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HieuThuocN07_05DataSet34.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HieuThuocN07_05DataSet34.xss">
+      <DependentUpon>HieuThuocN07_05DataSet34.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet35.xsc">
+      <DependentUpon>HieuThuocN07_05DataSet35.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet35.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HieuThuocN07_05DataSet35.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HieuThuocN07_05DataSet35.xss">
+      <DependentUpon>HieuThuocN07_05DataSet35.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet36.xsc">
+      <DependentUpon>HieuThuocN07_05DataSet36.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet36.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HieuThuocN07_05DataSet36.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HieuThuocN07_05DataSet36.xss">
+      <DependentUpon>HieuThuocN07_05DataSet36.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet4.xsc">
+      <DependentUpon>HieuThuocN07_05DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HieuThuocN07_05DataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HieuThuocN07_05DataSet4.xss">
+      <DependentUpon>HieuThuocN07_05DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet5.xsc">
+      <DependentUpon>HieuThuocN07_05DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HieuThuocN07_05DataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HieuThuocN07_05DataSet5.xss">
+      <DependentUpon>HieuThuocN07_05DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet6.xsc">
+      <DependentUpon>HieuThuocN07_05DataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HieuThuocN07_05DataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HieuThuocN07_05DataSet6.xss">
+      <DependentUpon>HieuThuocN07_05DataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet7.xsc">
+      <DependentUpon>HieuThuocN07_05DataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HieuThuocN07_05DataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HieuThuocN07_05DataSet7.xss">
+      <DependentUpon>HieuThuocN07_05DataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet8.xsc">
+      <DependentUpon>HieuThuocN07_05DataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HieuThuocN07_05DataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HieuThuocN07_05DataSet8.xss">
+      <DependentUpon>HieuThuocN07_05DataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet9.xsc">
+      <DependentUpon>HieuThuocN07_05DataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="HieuThuocN07_05DataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HieuThuocN07_05DataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HieuThuocN07_05DataSet9.xss">
+      <DependentUpon>HieuThuocN07_05DataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_en.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ms-step-2-active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\house.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifying-glass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eraser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\factory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tablet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inflation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power-on.png" />
+    <None Include="Resources\woman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vietnam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\capsules.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

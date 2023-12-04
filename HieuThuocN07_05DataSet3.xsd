@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="HieuThuocN07_05DataSet3" targetNamespace="http://tempuri.org/HieuThuocN07_05DataSet3.xsd" xmlns:mstns="http://tempuri.org/HieuThuocN07_05DataSet3.xsd" xmlns="http://tempuri.org/HieuThuocN07_05DataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="HieuThuocN07_05ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="HieuThuocN07_05ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Quan_Ly_Hieu_Thuoc.Properties.Settings.GlobalReference.Default.HieuThuocN07_05ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ThuocTableAdapter" GeneratorDataComponentClassName="ThuocTableAdapter" Name="Thuoc" UserDataComponentName="ThuocTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="HieuThuocN07_05ConnectionString (Settings)" DbObjectName="HieuThuocN07_05.dbo.Thuoc" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT hamluong FROM dbo.Thuoc</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="hamluong" DataSetColumn="hamluong" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="HieuThuocN07_05DataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="HieuThuocN07_05DataSet3" msprop:Generator_UserDSName="HieuThuocN07_05DataSet3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Thuoc" msprop:Generator_TableClassName="ThuocDataTable" msprop:Generator_TableVarName="tableThuoc" msprop:Generator_TablePropName="Thuoc" msprop:Generator_RowDeletingName="ThuocRowDeleting" msprop:Generator_RowChangingName="ThuocRowChanging" msprop:Generator_RowEvHandlerName="ThuocRowChangeEventHandler" msprop:Generator_RowDeletedName="ThuocRowDeleted" msprop:Generator_UserTableName="Thuoc" msprop:Generator_RowChangedName="ThuocRowChanged" msprop:Generator_RowEvArgName="ThuocRowChangeEvent" msprop:Generator_RowClassName="ThuocRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="hamluong" msprop:Generator_ColumnVarNameInTable="columnhamluong" msprop:Generator_ColumnPropNameInRow="hamluong" msprop:Generator_ColumnPropNameInTable="hamluongColumn" msprop:Generator_UserColumnName="hamluong" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="HieuThuocN07_05DataSet13" targetNamespace="http://tempuri.org/HieuThuocN07_05DataSet13.xsd" xmlns:mstns="http://tempuri.org/HieuThuocN07_05DataSet13.xsd" xmlns="http://tempuri.org/HieuThuocN07_05DataSet13.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="HieuThuocN07_05ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="HieuThuocN07_05ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Quan_Ly_Hieu_Thuoc.Properties.Settings.GlobalReference.Default.HieuThuocN07_05ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="getDonviTableAdapter" GeneratorDataComponentClassName="getDonviTableAdapter" Name="getDonvi" UserDataComponentName="getDonviTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="HieuThuocN07_05ConnectionString (Settings)" DbObjectName="HieuThuocN07_05.dbo.getDonvi" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT tendonvi FROM dbo.getDonvi</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="tendonvi" DataSetColumn="tendonvi" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="HieuThuocN07_05DataSet13" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="HieuThuocN07_05DataSet13" msprop:Generator_UserDSName="HieuThuocN07_05DataSet13">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="getDonvi" msprop:Generator_TableClassName="getDonviDataTable" msprop:Generator_TableVarName="tablegetDonvi" msprop:Generator_TablePropName="getDonvi" msprop:Generator_RowDeletingName="getDonviRowDeleting" msprop:Generator_RowChangingName="getDonviRowChanging" msprop:Generator_RowEvHandlerName="getDonviRowChangeEventHandler" msprop:Generator_RowDeletedName="getDonviRowDeleted" msprop:Generator_UserTableName="getDonvi" msprop:Generator_RowChangedName="getDonviRowChanged" msprop:Generator_RowEvArgName="getDonviRowChangeEvent" msprop:Generator_RowClassName="getDonviRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="tendonvi" msprop:Generator_ColumnVarNameInTable="columntendonvi" msprop:Generator_ColumnPropNameInRow="tendonvi" msprop:Generator_ColumnPropNameInTable="tendonviColumn" msprop:Generator_UserColumnName="tendonvi">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
