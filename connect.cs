@@ -16,7 +16,7 @@ namespace Quan_Ly_Hieu_Thuoc
 
         public connect()
         {
-            
+            //test git
             string connect = @"Data Source=DESKTOP-B3M8HSN;Initial Catalog=HieuThuocN07_05;Integrated Security=True";
             sqlcon = new SqlConnection(connect);
         }
