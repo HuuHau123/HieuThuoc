@@ -15,6 +15,7 @@ namespace Quan_Ly_Hieu_Thuoc
         public frmMain()
         {
             InitializeComponent();
+
         }
         private Form activeForm = null;
         private void CustomDesigning(Form mainForm)
